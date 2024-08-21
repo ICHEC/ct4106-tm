@@ -181,13 +181,18 @@
             </li>
         </ul>
         <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="material/cards-1.html">Lecture 1: Demystifying Quantum Computing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="material/cards-2.html">Lecture 2: Integrating HPC and Quantum Computing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="material/cards-3.html">Lecture 3: From Bits to Qubits</a></li>
-<li class="toctree-l1"><a class="reference internal" href="material/cards-4.html">Lecture 4: Realising Quantum Computing Systems</a></li>
-<li class="toctree-l1"><a class="reference internal" href="material/cards-5.html">Lecture 5: Accessing Quantum Computing Systems</a></li>
-<li class="toctree-l1"><a class="reference internal" href="material/cards-6.html">Lecture 6: Landscape of Quantum SDK’s and Tools</a></li>
-<li class="toctree-l1"><a class="reference internal" href="material/cards-7.html">Lecture 7: Landscape of Quantum Algorithms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material/cards-01.html">Lecture 1: Demystifying Quantum Computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material/cards-02.html">Lecture 2: Integrating Classical and Quantum Computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material/cards-03.html">Lecture 3: From Bits to Qubits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material/cards-04.html">Lecture 4: Mathematical framework for Quantum Computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material/cards-05.html">Lecture 5: Introduction to Quantum Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material/cards-06.html">Lecture 6: Realising Quantum Computing Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material/cards-07.html">Lecture 7: Hardwares for Quantum Computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material/cards-08.html">Lecture 8: Accessing Quantum Computing Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material/cards-09.html">Lecture 9: Heterogeneous Quantum Computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material/cards-10.html">Lecture 10: Quantum Algorithms - I</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material/cards-11.html">Lecture 11: Quantum Algorithms - II</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material/cards-12.html">Lecture 12: Quantum Activities in ICHEC</a></li>
 </ul>
 
     </div>
@@ -380,54 +385,24 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>#### 0
-````{dropdown} How does quantum computing (QC) fit alongside classical high-performance computing (HPC) systems &amp; applications?
-```{card} Answer
-QC will serve as an accelerator in HPC for specific parts of an application, leading to hybrid HPC-QC systems &amp; applications.
-```
-````
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">json</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;material/cards_1.json&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span>     <span class="n">dic</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">ss</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
 
-#### 1
-````{dropdown} What types of problems can quantum computing (QC) solve better than classical high-performance computing (HPC)?
-```{card} Answer
-Problems with approximations to address intractability, reducing precision when scaling complexity, simulate models which are related to quantum mechanics, etc..
-```
-````
+<span class="nn">File /opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/IPython/core/interactiveshell.py:324,</span> in <span class="ni">_modified_open</span><span class="nt">(file, *args, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">317</span> <span class="k">if</span> <span class="n">file</span> <span class="ow">in</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">}:</span>
+<span class="g g-Whitespace">    </span><span class="mi">318</span>     <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">319</span>         <span class="sa">f</span><span class="s2">&quot;IPython won&#39;t let you open fd=</span><span class="si">{</span><span class="n">file</span><span class="si">}</span><span class="s2"> by default &quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">320</span>         <span class="s2">&quot;as it is likely to crash IPython. If you know what you are doing, &quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">321</span>         <span class="s2">&quot;you can use builtins&#39; open.&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">322</span>     <span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">324</span> <span class="k">return</span> <span class="n">io_open</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 
-#### 2
-````{dropdown} How would you define your role &amp; value in quantum computing (QC)?
-```{card} Answer
-This is best defined in discussion with experts in quantum computing systems &amp; applications. Opportunities lie in end-user applications, co-development of technologies, ecosystem leadership, skills &amp; training, etc..
-```
-````
-
-#### 3
-````{dropdown} What are key tipping points or milestones for quantum computing (QC) to become more reliable &amp; scalable?
-```{card} Answer
-Improved noise &amp; reliability in qubits &amp; quantum gates, precision in control &amp; engineering of quantum systems, integration of classical HPC &amp; QC systems, higher-level software tools integrated with classical software tools.
-```
-````
-
-#### 4
-````{dropdown} Do quantum computers always need to be refridgerated and operated at extremely low temperatures?
-```{card} Answer
-Not all quantum computer realisation methods require refridgeration and operation at extremely low temperatures. For instance, the superconducting approach requires refridgeration, while photonics or diamond-based approaches may be operated at room temperature.
-```
-````
-
-#### 5
-````{dropdown} If real NISQ devices are already available for free access, then do we need software-based simulators of quantum computers?
-```{card} Answer
-Given the limitations of small and error-prone NISQ devices, software-based quantum simulators offer a valuable alternative for easier experimentation and skills development before transitioning to real hardware. Starting with simulators facilitates learning and development, providing a more accessible entry point compared to directly working with NISQ hardware.
-```
-````
-
-#### 6
-````{dropdown} How or where can you start your engagement with quantum computing?
-```{card} Answer
-Investigate potential use-cases of interest, mechanisms for skills development, partners for collaborations &amp; discussion, national &amp; international programmes in which to participate, etc..
-```
-````
+<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;material/cards_1.json&#39;
 </pre></div>
 </div>
 </div>
